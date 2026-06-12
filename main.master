@@ -1,0 +1,1112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="eng">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JSJB Flex Printing And Advertisement</title>
+    <meta name="description" content="JSJB is a multi-service brand offering Flex Printing & Advertisement, Gift & Gallery, Driving School, and Interior Design solutions. We provide creative printing, unique gifts, safe driving lessons, and stylish interior designs to help individuals and businesses express, learn, and grow with quality and innovation.">
+    <meta name="keywords" content="JSJB, flex printing, advertisement, gift gallery, personalized gifts, driving school, interior design, banner printing, signage, LED boards, car driving training, home decor, modular interiors, custom gifts, creative design services">
+    <meta name="author" content="JSJB Flex Printing and Advertisement | Gift and Gallery | Driving School | Interior Design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom-animation.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/satoshi.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- preloader -->
+        <!--<div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>-->
+        <!-- preloader end  -->
+
+        <!-- back-to-top-start  -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="far fa-angle-double-up"></i>
+        </button>
+        <!-- back-to-top-end  -->
+
+        <!-- tp-offcanvus-area-start -->
+        <div class="tpoffcanvas-area">
+            <div class="tpoffcanvas">
+                <div class="tpoffcanvas__close-btn">
+                    <button class="close-btn"><i class="fal fa-times"></i></button>
+                </div>
+                <div class="tpoffcanvas__logo">
+                    <a href="index.aspx">
+                        <img src="assets/img/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="tpoffcanvas__title">
+                    <p>JSJB FLEX PRINTING & ADVERTISEMENT truly stands out in the realm of printing services. Their commitment to high-quality products is evident in every project they undertake. From vibrant banners to eye-catching advertisements, the attention to detail and professionalism is commendable. Customer service is equally impressive, making the entire experience seamless and enjoyable. Highly recommended!</p>
+                </div>
+                <div class="offcanvas__category d-xl-none pb-40">
+                    <%--<button class="tp-offcanvas-category-toggle">--%>
+                    <button type="button" class="tp-offcanvas-category-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                        All Categories
+                    </button>
+                    <div class="tp-category-mobile-menu"></div>
+                </div>
+                <div class="tp-main-menu-mobile d-xl-none"></div>
+                <div class="tpoffcanvas__contact-info">
+                    <div class="tpoffcanvas__contact-title">
+                        <h5>Contact us</h5>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-light fa-location-dot"></i>
+                            <a href="https://maps.app.goo.gl/DvqHoVkCgPQy5Xom7">SP resident, Behen Chandrawati Kothi, Charkhi Dadri - Rohtak Rd, opposite Mahila thana, Charkhi Dadri, Haryana 127306</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jsjb.com">jsjb@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fal fa-phone-alt"></i>
+                            <a href="tel:+919813808820">+91-9813808820</a>
+                        </li>
+                    </ul>
+                </div>
+                <form></form>
+                <%-- <div class="tpoffcanvas__input">
+                    <div class="tpoffcanvas__input-title">
+                        <h4>Get UPdate</h4>
+                    </div>
+                    <formview>
+                        <div class="p-relative">
+                            <asp:TextBox ID="txtEnterMail" runat="server" placeholder="Enter mail"></asp:TextBox>
+                            <asp:LinkButton ID="btnSendMail" runat="server"><i class="fas fa-paper-plane"></i></asp:LinkButton>
+                        </div>
+                    </formview>
+
+                </div>--%>
+                <div class="tpoffcanvas__social">
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- tp-offcanvus-area-end -->
+
+
+        <header class="tp-header-wrap">
+            <!-- top-area-start -->
+            <div class="tp-header-top-5__area tp-header-top-5__space">
+                <div class="container custom-container-4">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-7">
+                            <div class="tp-header-top-5__left-box">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 17C6.9225 17.0004 6.8457 16.9849 6.77412 16.9546C6.70254 16.9243 6.63761 16.8797 6.58315 16.8234L2.05281 12.1994C1.07312 11.2005 0.405718 9.92743 0.135035 8.54129C-0.135647 7.15515 0.00255412 5.71821 0.532155 4.41225C1.06176 3.1063 1.95896 1.99001 3.11026 1.20461C4.26156 0.419216 5.61522 0 7 0C8.38478 0 9.73844 0.419216 10.8897 1.20461C12.041 1.99001 12.9382 3.1063 13.4678 4.41225C13.9974 5.71821 14.1356 7.15515 13.865 8.54129C13.5943 9.92743 12.9269 11.2005 11.9472 12.1994L7.41685 16.8234C7.36239 16.8797 7.29746 16.9243 7.22588 16.9546C7.1543 16.9849 7.0775 17.0004 7 17ZM7 1.20938C5.84946 1.2102 4.72497 1.55906 3.76859 2.21187C2.81221 2.86468 2.06684 3.79216 1.62666 4.87714C1.18648 5.96212 1.07122 7.15592 1.29546 8.30773C1.5197 9.45953 2.07337 10.5177 2.88652 11.3484L7 15.547L11.1135 11.3484C11.9266 10.5177 12.4803 9.45953 12.7045 8.30773C12.9288 7.15592 12.8135 5.96212 12.3733 4.87714C11.9332 3.79216 11.1878 2.86468 10.2314 2.21187C9.27503 1.55906 8.15054 1.2102 7 1.20938Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M7.00022 9.79921C6.41688 9.79921 5.84663 9.62265 5.3616 9.29186C4.87657 8.96107 4.49853 8.49091 4.2753 7.94083C4.05206 7.39075 3.99365 6.78545 4.10746 6.20149C4.22126 5.61753 4.50217 5.08113 4.91465 4.66011C5.32714 4.2391 5.85268 3.95238 6.42481 3.83623C6.99695 3.72007 7.58998 3.77969 8.12892 4.00754C8.66786 4.23539 9.1285 4.62124 9.45259 5.1163C9.77668 5.61136 9.94966 6.19339 9.94966 6.78879C9.94966 7.5872 9.63891 8.35291 9.08579 8.91748C8.53266 9.48204 7.78246 9.79921 7.00022 9.79921ZM7.00022 4.98255C6.65021 4.98255 6.30807 5.08848 6.01705 5.28695C5.72603 5.48543 5.49921 5.76753 5.36527 6.09757C5.23132 6.42762 5.19628 6.7908 5.26456 7.14118C5.33284 7.49155 5.50139 7.8134 5.74888 8.066C5.99637 8.31861 6.31169 8.49064 6.65498 8.56033C6.99826 8.63003 7.35408 8.59426 7.67744 8.45755C8.0008 8.32084 8.27719 8.08933 8.47164 7.79229C8.66609 7.49526 8.76988 7.14604 8.76988 6.78879C8.76988 6.30975 8.58344 5.85032 8.25156 5.51158C7.91968 5.17285 7.46956 4.98255 7.00022 4.98255Z"
+                                                    fill="#735CFC" />
+                                            </svg>
+                                        </span>
+                                        <a href="https://maps.app.goo.gl/DvqHoVkCgPQy5Xom7">Store Location</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.70313 9.70312C4.90104 9.50521 5 9.27083 5 9C5 8.72917 4.90104 8.49479 4.70313 8.29687C4.50521 8.09896 4.27083 8 4 8C3.72917 8 3.49479 8.09896 3.29688 8.29687C3.09896 8.49479 3 8.72917 3 9C3 9.27083 3.09896 9.50521 3.29688 9.70312C3.49479 9.90104 3.72917 10 4 10C4.27083 10 4.50521 9.90104 4.70313 9.70312ZM2 5H5V3H3.76563C3.69792 3 3.64063 3.02344 3.59375 3.07031L2.07031 4.59375C2.02344 4.64062 2 4.69792 2 4.76562V5ZM11.7031 9.70312C11.901 9.50521 12 9.27083 12 9C12 8.72917 11.901 8.49479 11.7031 8.29687C11.5052 8.09896 11.2708 8 11 8C10.7292 8 10.4948 8.09896 10.2969 8.29687C10.099 8.49479 10 8.72917 10 9C10 9.27083 10.099 9.50521 10.2969 9.70312C10.4948 9.90104 10.7292 10 11 10C11.2708 10 11.5052 9.90104 11.7031 9.70312ZM14 0.5V8.5C14 8.57812 13.9896 8.64844 13.9688 8.71094C13.9479 8.76823 13.9115 8.8151 13.8594 8.85156C13.8125 8.88802 13.7708 8.91927 13.7344 8.94531C13.6979 8.96615 13.6354 8.98177 13.5469 8.99219C13.4635 8.9974 13.4063 9.0026 13.375 9.00781C13.3438 9.00781 13.276 9.00781 13.1719 9.00781C13.0729 9.0026 13.0156 9 13 9C13 9.55208 12.8047 10.0234 12.4141 10.4141C12.0234 10.8047 11.5521 11 11 11C10.4479 11 9.97656 10.8047 9.58594 10.4141C9.19531 10.0234 9 9.55208 9 9H6C6 9.55208 5.80469 10.0234 5.41406 10.4141C5.02344 10.8047 4.55208 11 4 11C3.44792 11 2.97656 10.8047 2.58594 10.4141C2.19531 10.0234 2 9.55208 2 9H1.5C1.48438 9 1.42448 9.0026 1.32031 9.00781C1.22135 9.00781 1.15625 9.00781 1.125 9.00781C1.09375 9.0026 1.03385 8.9974 0.945313 8.99219C0.861979 8.98177 0.802083 8.96615 0.765625 8.94531C0.729167 8.91927 0.684896 8.88802 0.632813 8.85156C0.585938 8.8151 0.552083 8.76823 0.53125 8.71094C0.510417 8.64844 0.5 8.57812 0.5 8.5C0.5 8.36458 0.549479 8.2474 0.648438 8.14844C0.747396 8.04948 0.864583 8 1 8V5.5C1 5.45833 0.997396 5.36719 0.992188 5.22656C0.992188 5.08594 0.992188 4.98698 0.992188 4.92969C0.997396 4.8724 1.00521 4.78385 1.01563 4.66406C1.02604 4.53906 1.04167 4.44271 1.0625 4.375C1.08854 4.30208 1.125 4.22135 1.17188 4.13281C1.22396 4.04427 1.28385 3.96615 1.35156 3.89844L2.89844 2.35156C2.9974 2.2526 3.1276 2.16927 3.28906 2.10156C3.45573 2.03385 3.60938 2 3.75 2H5V0.5C5 0.364583 5.04948 0.247396 5.14844 0.148437C5.2474 0.0494788 5.36458 -2.38419e-07 5.5 -2.38419e-07H13.5C13.6354 -2.38419e-07 13.7526 0.0494788 13.8516 0.148437C13.9505 0.247396 14 0.364583 14 0.5Z"
+                                                    fill="#735CFC" />
+                                            </svg>
+                                        </span>
+                                        <a href="track-your-order.aspx">Track Your Order</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-5 col-lg-5 d-none d-lg-block">
+                            <div class="tp-header-top-5__text">
+                                <p>Get <span>25%</span> Offer by Purchase product !</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-5">
+                            <div class="tp-header-top-5__social-box d-none d-sm-block text-end">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top-area-end -->
+
+            <!-- middle-area-start -->
+            <div class="tp-header-middle-5__area tp-header-middle-5__border d-none d-xl-block">
+                <div class="container custom-container-4">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-4 d-none d-xxl-block">
+                            <div class="tp-header-middle-5__left-box">
+                                <ul>
+                                    <li>
+                                        <div class="tp-header-middle-5__bar">
+                                            <button class="tp-menu-bar">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <ellipse cx="2.13418" cy="2.14285" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="12.4242" cy="2.14285" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="22.7133" cy="2.14285" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="2.13418" cy="11.3266" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="12.4242" cy="11.3266" rx="2.13418" ry="2.14285"
+                                                        fill="#735CFC" />
+                                                    <ellipse cx="22.7133" cy="11.3266" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="2.13418" cy="20.6632" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="12.5004" cy="20.6632" rx="2.13418" ry="2.14285"
+                                                        fill="black" />
+                                                    <ellipse cx="22.8656" cy="20.6632" rx="2.13418" ry="2.14285"
+                                                        fill="#735CFC" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tp-header-middle-5__input-box p-relative">
+                                            <input type="text" placeholder="Search">
+                                            <button class="tp-header-middle-5__search-box">
+                                                <span>
+                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7719 13.6626L11.0742 9.94962C12.0249 8.85844 12.5459 7.48552 12.5459 6.05624C12.5459 2.71688 9.73177 0 6.27293 0C2.81409 0 0 2.71688 0 6.05624C0 9.3956 2.81409 12.1125 6.27293 12.1125C7.57143 12.1125 8.80883 11.7344 9.86677 11.0166L13.5926 14.7578C13.7484 14.9139 13.9578 15 14.1823 15C14.3947 15 14.5963 14.9218 14.7493 14.7796C15.0744 14.4776 15.0848 13.9768 14.7719 13.6626ZM6.27293 1.57989C8.82956 1.57989 10.9094 3.58793 10.9094 6.05624C10.9094 8.52456 8.82956 10.5326 6.27293 10.5326C3.7163 10.5326 1.63642 8.52456 1.63642 6.05624C1.63642 3.58793 3.7163 1.57989 6.27293 1.57989Z"
+                                                            fill="#6D7079" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-6">
+                            <div class="tp-header-5-logo">
+                                <a href="index.aspx">
+                                    <img src="assets/img/logo/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-6">
+                            <div class="tp-header-middle-5__right-box text-end">
+                                <ul>
+                                    <%--<li>
+                                        <div class="tp-header-top-4__value color d-flex align-items-center">
+                                            <img src="assets/img/logo/header-4-1.png" alt="">
+                                            <ul>
+                                                <li>
+                                                    <a id="tp-header-top-4__language-toogle" href="javascript:void(0)">English
+                                                   
+                                                        <span>
+                                                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M7.87213 0.417894L7.61008 0.138679C7.52761 0.0514798 7.41788 0.00344123 7.30061 0.00344123C7.18341 0.00344123 7.07355 0.0514798 6.99108 0.138679L4.00179 3.30193L1.00905 0.135169C0.926707 0.0479698 0.816852 0 0.699648 0C0.582444 0 0.472524 0.0479698 0.390117 0.135169L0.128001 0.412663C-0.042667 0.593118 -0.042667 0.887061 0.128001 1.06752L3.69122 4.85148C3.77356 4.93861 3.88328 5 4.00153 5H4.00289C4.12016 5 4.22989 4.93854 4.31223 4.85148L7.87213 1.07777C7.9546 0.99064 7.99987 0.871025 8 0.747006C8 0.622918 7.9546 0.504955 7.87213 0.417894Z"
+                                                                    fill="black" />
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="tp-header-top-4__value-submenu">
+                                                        <li>
+                                                            <a href="#">Arabic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Spanish</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Mandarin</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>--%>
+                                    <li>
+                                        <div class="tp-header-middle-5__icon-wrap d-none d-xl-block">
+                                            <div
+                                                class="tp-header-middle-5__icon d-flex align-items-center justify-content-end">
+                                                <a href="login.html">
+                                                    <div class="tp-header-middle-4__icon icon-space p-relative">
+                                                        <span>
+                                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <rect width="22" height="19.8" fill="url(#pattern0)" />
+                                                                <defs>
+                                                                    <pattern id="pattern0"
+                                                                        patternContentUnits="objectBoundingBox" width="1"
+                                                                        height="1">
+                                                                        <use xlink:href="#image0_423_869"
+                                                                            transform="matrix(0.00186012 0 0 0.00195312 0.0238095 0)" />
+                                                                    </pattern>
+                                                                    <image id="image0_423_869" width="512" height="512"
+                                                                        xlink:href="data:image/png;base64,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" />
+                                                                </defs>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="tp-header-middle-4__icon p-relative">
+                                                        <span>
+                                                            <i class="fal fa-random color"></i>
+                                                        </span>
+                                                        <div class="tp-header-middle-4__icon-text">
+                                                            <span>0</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="tp-header-middle-4__icon p-relative">
+                                                        <span>
+                                                            <i class="fal fa-heart color"></i>
+                                                        </span>
+                                                        <div class="tp-header-middle-4__icon-text red-color">
+                                                            <span>0</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="tp-header-middle-4__icon p-relative">
+                                                        <span>
+                                                            <svg width="17" height="22" viewBox="0 0 17 22" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M8.49906 12.2547C7.50815 12.2559 6.54747 11.9066 5.78061 11.2663C5.01374 10.626 4.48812 9.73423 4.29324 8.74293C4.27771 8.63851 4.28461 8.5319 4.31347 8.43047C4.34233 8.32904 4.39246 8.23523 4.46038 8.15553C4.52831 8.07583 4.6124 8.01215 4.70684 7.9689C4.80127 7.92566 4.9038 7.90388 5.0073 7.90508C5.17741 7.90255 5.34282 7.96208 5.47373 8.07295C5.60464 8.18381 5.69246 8.33873 5.72136 8.50979C5.85584 9.16472 6.20712 9.75248 6.71618 10.1743C7.22525 10.5962 7.86109 10.8265 8.51691 10.8265C9.17273 10.8265 9.80857 10.5962 10.3176 10.1743C10.8267 9.75248 11.178 9.16472 11.3125 8.50979C11.3414 8.33873 11.4292 8.18381 11.5601 8.07295C11.691 7.96208 11.8564 7.90255 12.0265 7.90508C12.13 7.90388 12.2325 7.92566 12.327 7.9689C12.4214 8.01215 12.5055 8.07583 12.5734 8.15553C12.6414 8.23523 12.6915 8.32904 12.7204 8.43047C12.7492 8.5319 12.7561 8.63851 12.7406 8.74293C12.5445 9.7404 12.0137 10.6369 11.2394 11.2779C10.4652 11.9189 9.49608 12.2643 8.49906 12.2547Z"
+                                                                    fill="black" />
+                                                                <path
+                                                                    d="M14.8551 21.857H2.14486C1.8543 21.8574 1.5667 21.7974 1.29957 21.6808C1.03243 21.5642 0.791333 21.3933 0.590947 21.1787C0.390561 20.964 0.235073 20.71 0.133942 20.432C0.0328113 20.1541 -0.0118486 19.8581 0.0026796 19.562L0.581069 7.0014C0.605007 6.43829 0.841225 5.90638 1.2404 5.51674C1.63957 5.12711 2.17083 4.90987 2.72325 4.9104H14.2768C14.8292 4.90987 15.3604 5.12711 15.7596 5.51674C16.1588 5.90638 16.395 6.43829 16.4189 7.0014L16.9973 19.562C17.0118 19.8581 16.9672 20.1541 16.8661 20.432C16.7649 20.71 16.6094 20.964 16.4091 21.1787C16.2087 21.3933 15.9676 21.5642 15.7004 21.6808C15.4333 21.7974 15.1457 21.8574 14.8551 21.857ZM2.72325 6.37483C2.53387 6.37483 2.35225 6.45159 2.21833 6.58823C2.08442 6.72486 2.00919 6.91017 2.00919 7.1034L1.4308 19.6348C1.42596 19.7335 1.44084 19.8322 1.47455 19.9249C1.50827 20.0175 1.56009 20.1022 1.62689 20.1737C1.69369 20.2453 1.77405 20.3022 1.8631 20.3411C1.95214 20.38 2.04801 20.4 2.14486 20.3998H14.8551C14.952 20.4 15.0479 20.38 15.1369 20.3411C15.226 20.3022 15.3063 20.2453 15.3731 20.1737C15.4399 20.1022 15.4917 20.0175 15.5254 19.9249C15.5592 19.8322 15.574 19.7335 15.5692 19.6348L14.9908 7.07426C14.9908 6.88103 14.9156 6.69572 14.7817 6.55908C14.6478 6.42245 14.4661 6.34569 14.2768 6.34569L2.72325 6.37483Z"
+                                                                    fill="black" />
+                                                                <path
+                                                                    d="M12.7845 5.64643H11.3564V4.37143C11.3564 3.59852 11.0555 2.85725 10.5199 2.31072C9.9842 1.76418 9.25771 1.45714 8.50018 1.45714C7.74266 1.45714 7.01616 1.76418 6.48052 2.31072C5.94487 2.85725 5.64394 3.59852 5.64394 4.37143V5.64643H4.21582V4.37143C4.21582 3.21206 4.66721 2.10017 5.47068 1.28036C6.27416 0.46056 7.3639 0 8.50018 0C9.63647 0 10.7262 0.46056 11.5297 1.28036C12.3332 2.10017 12.7845 3.21206 12.7845 4.37143V5.64643Z"
+                                                                    fill="black" />
+                                                            </svg>
+                                                        </span>
+                                                        <div class="tp-header-middle-4__icon-text red-color">
+                                                            <span>0</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- middle-area-end -->
+
+            <!-- header-area-start -->
+            <div id="header-sticky" class="tp-header-5-area tp-header-5-space">
+                <div class="container custom-container-4">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <div class="tp-header-category tp-category-menu tp-header-category-toggle d-none d-xl-block">
+                                <%--<div class="tp-header-category tp-category-menu tp-header-category-toggle d-block d-xl-block">--%>
+                                <%--<div class="tp-header-category tp-category-menu tp-header-category-toggle d-block"> --%>
+                                <%--<div class="tp-header-category tp-category-menu tp-header-category-toggle d-xl-block">--%>
+                                <button class="tp-category-menu-btn tp-category-menu-toggle">
+                                    <span>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1ZM0 7C0 6.44772 0.447715 6 1 6H17C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H1C0.447715 8 0 7.55228 0 7ZM1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14H11C11.5523 14 12 13.5523 12 13C12 12.4477 11.5523 12 11 12H1Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </span>
+                                    All Departments
+                           
+                                </button>
+                                <nav class="tp-category-menu-content">
+                                    <ul>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.90532 14.8316V12.5719C5.9053 11.9971 6.37388 11.5301 6.95443 11.5262H9.08101C9.66434 11.5262 10.1372 11.9944 10.1372 12.5719V12.5719V14.8386C10.1371 15.3266 10.5305 15.7254 11.0233 15.7368H12.441C13.8543 15.7368 15 14.6026 15 13.2035V13.2035V6.77525C14.9925 6.22482 14.7314 5.70794 14.2911 5.37171L9.44253 1.50496C8.59311 0.83168 7.38562 0.83168 6.5362 1.50496L1.70886 5.37873C1.26693 5.7136 1.00544 6.23133 1 6.78227V13.2035C1 14.6026 2.1457 15.7368 3.55899 15.7368H4.97671C5.48173 15.7368 5.89114 15.3315 5.89114 14.8316V14.8316"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                New Arrivals</a>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.6856 4.54975C2.6856 3.52014 3.51984 2.6859 4.54945 2.68508H5.3977C5.88984 2.68508 6.36136 2.48971 6.71089 2.14348L7.30359 1.54995C8.02984 0.819578 9.21031 0.816281 9.94068 1.54253L9.9415 1.54336L9.94892 1.54995L10.5425 2.14348C10.892 2.49053 11.3635 2.68508 11.8556 2.68508H12.7031C13.7327 2.68508 14.5677 3.51932 14.5677 4.54975V5.39636C14.5677 5.88849 14.7623 6.36084 15.1093 6.71037L15.7029 7.3039C16.4332 8.03015 16.4374 9.21061 15.7111 9.94098L15.7103 9.94181L15.7029 9.94923L15.1093 10.5428C14.7623 10.8915 14.5677 11.363 14.5677 11.8551V12.7034C14.5677 13.733 13.7335 14.5672 12.7039 14.5672H12.7031H11.854C11.3619 14.5672 10.8895 14.7626 10.5408 15.1096L9.94727 15.7024C9.22185 16.4327 8.04221 16.4368 7.31183 15.7122C7.31101 15.7114 7.31019 15.7106 7.30936 15.7098L7.30194 15.7024L6.70924 15.1096C6.36054 14.7626 5.88819 14.568 5.39605 14.5672H4.54945C3.51984 14.5672 2.6856 13.733 2.6856 12.7034V11.8535C2.6856 11.3613 2.49023 10.8898 2.14318 10.5411L1.55047 9.94758C0.820097 9.22215 0.815976 8.04251 1.5414 7.31214C1.5414 7.31132 1.54223 7.31049 1.54305 7.30967L1.55047 7.30225L2.14318 6.70872C2.49023 6.35919 2.6856 5.88767 2.6856 5.39471V4.54975"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.50787 10.7453L10.745 6.50812" stroke="currentColor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M10.6823 10.6862H10.6897" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.56053 6.56446H6.56795" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Handmade
+                                            </a>
+                                            <ul class="tp-submenu">
+                                                <li><a href="shop.html">Table</a></li>
+                                                <li><a href="shop.html">Chair</a></li>
+                                                <li><a href="shop.html">Watch</a></li>
+                                                <li><a href="shop.html">Furniture</a></li>
+                                                <li><a href="shop.html">Clock</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.5 8.5V16H2.50003V8.5" stroke="currentColor"
+                                                            stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M16 4.75H1V8.5H16V4.75Z" stroke="currentColor"
+                                                            stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.5 16V4.75" stroke="currentColor" stroke-width="1.4"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M8.49997 4.75H5.12497C4.62769 4.75 4.15077 4.55246 3.79914 4.20083C3.44751 3.84919 3.24997 3.37228 3.24997 2.875C3.24997 2.37772 3.44751 1.90081 3.79914 1.54917C4.15077 1.19754 4.62769 1 5.12497 1C7.74997 1 8.49997 4.75 8.49997 4.75Z"
+                                                            stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M8.5 4.75H11.875C12.3723 4.75 12.8492 4.55246 13.2008 4.20083C13.5525 3.84919 13.75 3.37228 13.75 2.875C13.75 2.37772 13.5525 1.90081 13.2008 1.54917C12.8492 1.19754 12.3723 1 11.875 1C9.25 1 8.5 4.75 8.5 4.75Z"
+                                                            stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Gifts Sets
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.5 1H2.5C1.67157 1 1 1.67157 1 2.5V10C1 10.8284 1.67157 11.5 2.5 11.5H14.5C15.3284 11.5 16 10.8284 16 10V2.5C16 1.67157 15.3284 1 14.5 1Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M5.5 14.5H11.5" stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.5 11.5V14.5" stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Candles
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="15" height="18" viewBox="0 0 15 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.375 1H2.625C1.72754 1 1 1.72754 1 2.625V15.625C1 16.5225 1.72754 17.25 2.625 17.25H12.375C13.2725 17.25 14 16.5225 14 15.625V2.625C14 1.72754 13.2725 1 12.375 1Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M7.5 14H7.50875" stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Book
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M9 1C13.4176 1 17 4.5816 17 9C17 13.4184 13.4176 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M11.5263 8.99592C11.5263 8.31286 8.02529 6.12769 7.62814 6.5206C7.23099 6.9135 7.19281 11.0413 7.62814 11.4712C8.06348 11.9027 11.5263 9.67898 11.5263 8.99592Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Cosmetics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M11.6292 1.26076C12.5027 1.60843 12.7699 2.81924 13.1271 3.20843C13.4843 3.59762 13.9955 3.72995 14.2783 3.72995C15.7814 3.72995 17 4.94854 17 6.45081V11.4627C17 13.4778 15.3654 15.1124 13.3503 15.1124H4.64973C2.63373 15.1124 1 13.4778 1 11.4627V6.45081C1 4.94854 2.21859 3.72995 3.72173 3.72995C4.00368 3.72995 4.51481 3.59762 4.87287 3.20843C5.23005 2.81924 5.49643 1.60843 6.36995 1.26076C7.24432 0.913081 10.7557 0.913081 11.6292 1.26076Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M13.7527 5.97314H13.7605" stroke="currentColor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M11.7491 9.11086C11.7491 7.59215 10.5184 6.36145 8.99974 6.36145C7.48104 6.36145 6.25034 7.59215 6.25034 9.11086C6.25034 10.6296 7.48104 11.8603 8.99974 11.8603C10.5184 11.8603 11.7491 10.6296 11.7491 9.11086Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Handy Cream
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.30431 1C1.58423 1 1 1.59405 1 2.32534V3.10537C1 3.64706 1.20599 4.16798 1.57446 4.55981L5.61258 8.8536L5.61436 8.8509C6.39393 9.64899 6.83254 10.7279 6.83254 11.8528V15.6626C6.83254 15.9172 7.09891 16.0798 7.32 15.9597L9.61963 14.7066C9.96679 14.517 10.1834 14.1486 10.1834 13.7487V11.8428C10.1834 10.7242 10.6158 9.64989 11.3883 8.8536L15.4264 4.55981C15.794 4.16798 16 3.64706 16 3.10537V2.32534C16 1.59405 15.4167 1 14.6966 1H2.30431Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Plastic Gifts
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop.html">
+                                                <span>
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.7462 7.16473V13.167C15.7462 13.6457 15.556 14.1049 15.2175 14.4434C14.8789 14.782 14.4197 14.9722 13.941 14.9722H4.3058C3.82703 14.9722 3.3679 14.782 3.02936 14.4434C2.69083 14.1049 2.50061 13.6457 2.50061 13.167V9.36255"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M3.46186 1.00001C3.18176 0.999863 2.90854 1.08659 2.6798 1.24825C2.45106 1.4099 2.27807 1.63852 2.18471 1.9026L1.11062 5.01655C0.713475 6.15382 1.41752 7.16021 2.71274 7.16021C3.18296 7.14863 3.64325 7.02257 4.05374 6.79294C4.46424 6.56331 4.81255 6.23705 5.0685 5.84243C5.20151 6.24071 5.46067 6.58479 5.80676 6.82258C6.15285 7.06036 6.56702 7.17889 6.98651 7.16021C7.18566 6.7642 7.4909 6.43132 7.86823 6.19871C8.24556 5.96611 8.68013 5.84294 9.1234 5.84294C9.56666 5.84294 10.0012 5.96611 10.3785 6.19871C10.7558 6.43132 11.0611 6.7642 11.2603 7.16021V7.16021C11.679 7.17789 12.0922 7.0589 12.4373 6.82119C12.7825 6.58348 13.041 6.23994 13.1738 5.84243C13.431 6.23686 13.7802 6.56288 14.1914 6.79243C14.6026 7.02199 15.0633 7.1482 15.5341 7.16021C16.8293 7.16021 17.5288 6.15382 17.1362 5.01655L16.0621 1.9026C15.9685 1.6378 15.7948 1.40866 15.5652 1.24694C15.3355 1.08522 15.0613 0.998927 14.7804 1.00001H3.46186Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M11.0707 14.9722H7.19861V11.4701C7.19861 10.983 7.3921 10.5158 7.73656 10.1713C8.08102 9.82685 8.54822 9.63333 9.03536 9.63333H9.22041C9.70755 9.63333 10.1747 9.82685 10.5192 10.1713C10.8637 10.5158 11.0572 10.983 11.0572 11.4701L11.0707 14.9722Z"
+                                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Silk Accessories
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="tp-header-4__logo  d-xl-none">
+                                <a href="index.aspx">
+                                    <img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9 d-none d-xl-block">
+                            <div class="tp-header-4__main-menu menu-space">
+                                <nav class="tp-main-menu-content">
+                                    <ul>
+                                        <li>
+                                            <a href="index.aspx">Home
+        <span class="tp-header-4__menu-shape">
+            <svg width="45" height="3" viewBox="0 0 45 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z" fill="#951DF6" />
+            </svg>
+        </span>
+                                            </a>
+                                        </li>
+                                        <%--<li class="has-dropdown">
+                                            <a href="#">Printing Press
+                                           
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <div class="tp-submenu submenu has-homemenu">
+                                                <div class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-5">
+                                                    <div class="col homemenu">
+                                                        <div class="homemenu-thumb mb-15">
+                                                            <img src="assets/img/menu/home-1.jpg" alt="">
+                                                            <div class="homemenu-btn">
+                                                                <a class="tp-menu-btn" href="index.html">View Demo</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu-content text-center">
+                                                            <h4 class="homemenu-title">
+                                                                <a href="index.html">Home 01</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col homemenu">
+                                                        <div class="homemenu-thumb mb-15">
+                                                            <img src="assets/img/menu/home-2.jpg" alt="">
+                                                            <div class="homemenu-btn">
+                                                                <a class="tp-menu-btn" href="index-2.html">View Demo</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu-content text-center">
+                                                            <h4 class="homemenu-title">
+                                                                <a href="index-2.html">Home 02</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col homemenu">
+                                                        <div class="homemenu-thumb mb-15">
+                                                            <img src="assets/img/menu/home-3.jpg" alt="">
+                                                            <div class="homemenu-btn">
+                                                                <a class="tp-menu-btn" href="index-3.html">View Demo</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu-content text-center">
+                                                            <h4 class="homemenu-title">
+                                                                <a href="index-3.html">Home 03</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col homemenu">
+                                                        <div class="homemenu-thumb mb-15">
+                                                            <img src="assets/img/menu/home-4.jpg" alt="">
+                                                            <div class="homemenu-btn">
+                                                                <a class="tp-menu-btn" href="index-4.html">View Demo</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu-content text-center">
+                                                            <h4 class="homemenu-title">
+                                                                <a href="index-4.html">Home 04</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col homemenu">
+                                                        <div class="homemenu-thumb mb-15">
+                                                            <img src="assets/img/menu/home-5.jpg" alt="">
+                                                            <div class="homemenu-btn">
+                                                                <a class="tp-menu-btn" href="index-5.html">View Demo</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu-content text-center">
+                                                            <h4 class="homemenu-title">
+                                                                <a href="index-4.html">Home 05</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>--%>
+                                        <li class="has-dropdown">
+                                            <a href="#">Printing Press
+                                           
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="submenu tp-submenu">
+                                                <li><a href="flex-printing.aspx">Flex Printing</a></li>
+                                                <li><a href="gift-printing.aspx">Gift Printing</a></li>
+                                                <li><a href="advertisement.aspx">Advertisement</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Interior Designing
+     
+          <span class="tp-header-4__menu-shape">
+              <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                      d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                      fill="#951DF6" />
+              </svg>
+          </span>
+                                            </a>
+                                            <ul class="submenu tp-submenu">
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="shop-details.html">shop details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Driving School
+   
+        <span class="tp-header-4__menu-shape">
+            <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                    fill="#951DF6" />
+            </svg>
+        </span>
+                                            </a>
+                                            <ul class="submenu tp-submenu">
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="shop-details.html">shop details</a></li>
+                                            </ul>
+                                        </li>
+                                        <%--<li>
+                                            <a href="#">Interior Designing
+    
+         <span class="tp-header-4__menu-shape">
+             <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                 <path
+                     d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                     fill="#951DF6" />
+             </svg>
+         </span>
+                                            </a>
+                                        </li>--%>
+                                        <%-- <li>
+                                            <a href="#">Driving School
+    
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>--%>
+                                        <%--<li class="has-dropdown">
+                                            <a href="blog.html">Blog
+                                           
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="submenu tp-submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="blog-details.html">blog details</a></li>
+                                            </ul>
+                                        </li>--%>
+                                        <%--<li class="has-dropdown">
+                                            <a href="#">About JSJB
+                                           
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="submenu tp-submenu">
+                                                 <li><a href="#">JSJB Flex Printing & Advertisement</a></li>
+                                                <li><a href="#">JSJB Printing Press</a></li>
+                                                <li><a href="#">JSJB Interior Designing</a></li>
+                                                <li><a href="#">JSJB Driving School</a></li>
+                                                <li><a href="project-details.html">Terms & Conditions</a></li>
+                                                <li><a href="cart.html">Cancellation & Refund Policy</a></li>
+                                                <li><a href="checkout.html">Shipping & Delivery Policy</a></li>
+                                            </ul>
+                                        </li>--%>
+                                        <li>
+                                            <a href="contact.aspx">Contact
+                                           
+                                                <span class="tp-header-4__menu-shape">
+                                                    <svg width="45" height="3" viewBox="0 0 45 3" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M-0.000598906 2.80516C14.9404 0.644894 30.0099 0.466598 45 2L-0.000598906 2.80516Z"
+                                                            fill="#951DF6" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <%--<div class="col-xl-1">--%>
+                            <div class="tp-header-5-right-box d-flex align-items-center justify-content-end">
+                                <%--<div class="tp-header-5__value-box d-none d-xxl-block">
+                                    <div class="tp-header-5__value color d-flex align-items-center">
+                                        <ul>
+                                            <li>
+                                                <a id="tp-header-5__language-toogle" href="javascript:void(0)">Recently viewd
+                                               
+                                                    <span>
+                                                        <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M7.87213 0.417894L7.61008 0.138679C7.52761 0.0514798 7.41788 0.00344123 7.30061 0.00344123C7.18341 0.00344123 7.07355 0.0514798 6.99108 0.138679L4.00179 3.30193L1.00905 0.135169C0.926707 0.0479698 0.816852 0 0.699648 0C0.582444 0 0.472524 0.0479698 0.390117 0.135169L0.128001 0.412663C-0.042667 0.593118 -0.042667 0.887061 0.128001 1.06752L3.69122 4.85148C3.77356 4.93861 3.88328 5 4.00153 5H4.00289C4.12016 5 4.22989 4.93854 4.31223 4.85148L7.87213 1.07777C7.9546 0.99064 7.99987 0.871025 8 0.747006C8 0.622918 7.9546 0.504955 7.87213 0.417894Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                                <ul class="tp-header-5__value-submenu">
+                                                    <li>
+                                                        <a href="#">product 01</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">product 02</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">product 03</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tp-header-5-contact">
+                                    <a href="contact.html">
+                                        <i>
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.3063 9.37581C10.1788 9.24753 10.0272 9.14574 9.86024 9.07628C9.69333 9.00683 9.51437 8.97108 9.33363 8.97108C9.1529 8.97108 8.97394 9.00683 8.80702 9.07628C8.6401 9.14574 8.48851 9.24753 8.36093 9.37581L7.6972 10.0409C6.9499 9.56564 6.25752 9.00875 5.63279 8.38045C5.00711 7.75322 4.45149 7.05956 3.97576 6.31174L4.63949 5.64663C4.76751 5.51879 4.86909 5.36688 4.9384 5.19962C5.0077 5.03235 5.04338 4.85302 5.04338 4.67191C5.04338 4.4908 5.0077 4.31147 4.9384 4.1442C4.86909 3.97694 4.76751 3.82503 4.63949 3.69719L3.34408 2.40367C3.2183 2.27496 3.06799 2.1729 2.90207 2.10356C2.73615 2.03421 2.55801 1.999 2.37824 2.00002C2.1972 1.99958 2.01785 2.03501 1.85052 2.10429C1.68319 2.17356 1.53119 2.27531 1.40325 2.40367L0.780721 3.02291C0.483999 3.3426 0.262544 3.72487 0.132634 4.1416C0.00272389 4.55834 -0.0323385 4.99895 0.0300243 5.43105C0.176502 7.15115 1.30255 9.21986 3.03739 10.9629C4.77223 12.7059 6.85954 13.8297 8.57607 13.9949C8.70414 14.0017 8.83249 14.0017 8.96057 13.9949C9.33007 14.0104 9.69895 13.9519 10.0456 13.8227C10.3922 13.6935 10.7096 13.4963 10.9792 13.2426L11.5972 12.6188C11.7253 12.4906 11.8268 12.3382 11.8959 12.1706C11.9651 12.0029 12.0004 11.8232 12 11.6418C12.001 11.4616 11.9659 11.2831 11.8967 11.1168C11.8275 10.9506 11.7256 10.8 11.5972 10.6739L10.3063 9.37581ZM10.9517 11.972L10.3292 12.5913C10.099 12.7835 9.83034 12.9239 9.5413 13.0031C9.25226 13.0822 8.94963 13.0982 8.65388 13.0499C7.16622 12.9215 5.27117 11.8665 3.70569 10.2978C2.14021 8.72905 1.08741 6.84382 0.945508 5.35307C0.896145 5.05672 0.911506 4.75316 0.990531 4.46333C1.06956 4.17349 1.21036 3.90428 1.40325 3.67425L2.04867 3.05043C2.09144 3.00792 2.14216 2.97428 2.19793 2.95146C2.2537 2.92863 2.31342 2.91706 2.37366 2.91741C2.43391 2.91706 2.49362 2.92863 2.54939 2.95146C2.60516 2.97428 2.65589 3.00792 2.69866 3.05043L3.99407 4.36229C4.07933 4.44823 4.12718 4.56449 4.12718 4.68567C4.12718 4.80685 4.07933 4.92311 3.99407 5.00905L3.07859 5.92644C3.00695 5.99787 2.96092 6.09105 2.94767 6.19145C2.93442 6.29185 2.9547 6.39382 3.00535 6.48146C3.55344 7.41648 4.21961 8.27675 4.98737 9.04097C5.75 9.81032 6.60849 10.4779 7.54157 11.0271C7.62903 11.0779 7.73078 11.0982 7.83097 11.0849C7.93116 11.0716 8.02415 11.0255 8.09544 10.9537L9.01092 10.0363C9.09669 9.9509 9.2127 9.90295 9.33363 9.90295C9.45456 9.90295 9.57058 9.9509 9.65634 10.0363L10.9517 11.3344C10.9942 11.3773 11.0277 11.4281 11.0505 11.484C11.0733 11.5399 11.0848 11.5997 11.0845 11.6601C11.0816 11.7773 11.0341 11.8889 10.9517 11.972Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M12.0748 1.90752C11.4668 1.30136 10.744 0.820736 9.94812 0.49335C9.15222 0.165964 8.29894 -0.001704 7.43748 1.30556e-05C7.32145 1.30556e-05 7.21018 0.0457918 7.12814 0.127279C7.04609 0.208765 7 0.319285 7 0.434525C7 0.549765 7.04609 0.660285 7.12814 0.741771C7.21018 0.823258 7.32145 0.869037 7.43748 0.869037C8.18841 0.86901 8.93191 1.01669 9.62507 1.30354C10.3182 1.5904 10.9473 2.01075 11.4761 2.54035C12.0048 3.06995 12.4227 3.69831 12.7057 4.38916C12.9887 5.08001 13.1311 5.81968 13.1247 6.56549C13.1247 6.68073 13.1708 6.79125 13.2529 6.87273C13.3349 6.95422 13.4462 7 13.5622 7C13.6782 7 13.7895 6.95422 13.8716 6.87273C13.9536 6.79125 13.9997 6.68073 13.9997 6.56549C14.0081 5.70078 13.8421 4.84316 13.5115 4.04317C13.1809 3.24319 12.6924 2.51704 12.0748 1.90752Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M9.32428 4.66593C9.5765 4.91388 9.77602 5.20923 9.91111 5.53458C10.0462 5.85994 10.1141 6.20873 10.1109 6.56044C10.1109 6.67702 10.1577 6.78882 10.2411 6.87126C10.3244 6.95369 10.4374 7 10.5553 7C10.6732 7 10.7862 6.95369 10.8696 6.87126C10.9529 6.78882 10.9997 6.67702 10.9997 6.56044C11.0056 6.09496 10.918 5.63296 10.742 5.20124C10.5659 4.76951 10.305 4.37665 9.97424 4.04545C9.64351 3.71424 9.24959 3.45128 8.81531 3.27182C8.38104 3.09236 7.91507 2.99996 7.44441 3C7.32655 3 7.21351 3.04631 7.13017 3.12874C7.04682 3.21118 7 3.32298 7 3.43956C7 3.55614 7.04682 3.66794 7.13017 3.75038C7.21351 3.83281 7.32655 3.87912 7.44441 3.87912C7.79465 3.88173 8.14093 3.95256 8.46348 4.08756C8.78604 4.22257 9.07854 4.4191 9.32428 4.66593Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </i>
+                                        Call To Us
+                                    </a>
+                                </div>--%>
+                                <div class="tp-header-2__bar bar-height text-end d-xl-none">
+                                    <button class="tp-menu-bar">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header-area-end -->
+
+        </header>
+
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer>
+
+            <!-- footer-area-start -->
+            <div class="tp-footer-5__area pt-90 pb-35">
+                <div class="container custom-container-4">
+                    <div class="tp-footer-5__border">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                                <div class="tp-footer-5__top-box d-flex align-items-center">
+                                    <div class="tp-footer-5__icon">
+                                        <span>
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M39.5682 50.9831C38.7527 50.9831 38.0136 50.5041 37.6757 49.7516L37.6755 49.7513L29.1754 30.8223L10.2464 22.3221C9.47859 21.9772 8.99543 21.2149 9.01523 20.38C9.03445 19.5736 9.5298 18.8625 10.2773 18.5685L57.2204 0.105114C57.9756 -0.191839 58.8394 -0.00680026 59.422 0.575973C60.0046 1.15875 60.1893 2.02277 59.8924 2.77722L41.4292 49.7204C41.135 50.468 40.4241 50.9633 39.6177 50.9825C39.6013 50.9829 39.5846 50.9831 39.5682 50.9831ZM14.5625 20.5349L31.0213 27.9258C31.4895 28.1364 31.8623 28.5094 32.072 28.9766L39.4628 45.4351L55.6055 4.39218L14.5625 20.5349Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M30.4234 31.2735C29.9885 31.2735 29.5536 31.1076 29.2218 30.7758C28.5582 30.1122 28.5582 29.0363 29.2218 28.3728L39.7795 17.8151C40.443 17.1515 41.519 17.1515 42.1826 17.8151C42.8462 18.4787 42.8462 19.5545 42.1826 20.2182L31.6249 30.7758C31.2931 31.1076 30.8583 31.2735 30.4234 31.2735Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M10.4204 51.2765C9.98556 51.2765 9.55067 51.1106 9.21892 50.7788C8.55528 50.1153 8.55528 49.0393 9.21892 48.3758L21.3954 36.1993C22.0589 35.5358 23.1349 35.5358 23.7984 36.1993C24.4621 36.8628 24.4621 37.9388 23.7984 38.6023L11.622 50.7788C11.2902 51.1106 10.8553 51.2765 10.4204 51.2765Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M18.6314 59.9804C18.1965 59.9804 17.7616 59.8144 17.4299 59.4827C16.7662 58.8191 16.7662 57.7431 17.4299 57.0796L25.274 49.2354C25.9376 48.5719 27.0136 48.5719 27.6771 49.2354C28.3407 49.8989 28.3407 50.975 27.6771 51.6385L19.8329 59.4827C19.5011 59.8144 19.0663 59.9804 18.6314 59.9804Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M1.70413 43.0532C1.26925 43.0532 0.834482 42.8874 0.502607 42.5555C-0.161025 41.892 -0.161025 40.816 0.502607 40.1524L8.34679 32.3083C9.01042 31.6446 10.0862 31.6446 10.7498 32.3083C11.4135 32.9718 11.4135 34.0478 10.7498 34.7113L2.90565 42.5555C2.5739 42.8873 2.1389 43.0532 1.70413 43.0532Z"
+                                                    fill="#735CFC" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="tp-footer-5__content">
+                                        <h4 class="tp-footer-5__top-title">NEWSLETTER SIGN UP!
+                                        </h4>
+                                        <span>And receive $20 coupon for first shopping.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                                <div class="tp-footer-5__form">
+                                    <div>
+                                        <input type="email" placeholder="Enter your e-mail">
+                                    </div>
+                                    <span class="tp-footer-5__input-icon">
+                                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17 7.4C17 10.417 17 11.9255 16.0627 12.8627C15.1255 13.8 13.617 13.8 10.6 13.8H7.4C4.38301 13.8 2.87452 13.8 1.93726 12.8627C1 11.9255 1 10.417 1 7.4C1 4.38301 1 2.87452 1.93726 1.93726C2.87452 1 4.38301 1 7.4 1H10.6C13.617 1 15.1255 1 16.0627 1.93726C16.5853 2.4598 16.8165 3.15991 16.9188 4.2"
+                                                stroke="#82868C" stroke-width="1.5" stroke-linecap="round" />
+                                            <path
+                                                d="M13.7995 4.19922L12.0723 5.63848C10.603 6.86291 9.86838 7.47512 8.99946 7.47512C8.48002 7.47512 8.00857 7.25634 7.39946 6.81877M4.19946 4.19922L4.91946 4.79922L5.63946 5.39922"
+                                                stroke="#82868C" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg>
+
+                                    </span>
+                                    <button class="tp-btn-purple-sm">
+                                        subscribe
+                               
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-footer-2__ptb">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-7 col-12 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                                <div class="tp-footer-5__widget footer-col-13">
+                                    <%--<div class="tp-footer-5__logo">--%>
+                                    <div>
+                                        <a href="index.aspx">
+                                            <img src="assets/img/logo/logo.png" alt=""></a>
+                                    </div>
+                                    <div class="tp-footer-5__text">
+                                        <p>
+                                            Corporate clients and leisure travelers has
+                                        been relying on Groundlink for
+                                        </p>
+                                    </div>
+                                    <div class="tp-footer-5__contact-list">
+                                        <a href="tel:+8060008899"><span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.79707 3.90388L6.42023 5.02048C6.9826 6.02815 6.75684 7.35005 5.87112 8.23577C5.87112 8.23578 5.87112 8.23577 5.87112 8.23578C5.871 8.23589 4.79686 9.31025 6.74468 11.2581C8.69183 13.2052 9.76616 12.1324 9.76697 12.1316C9.76699 12.1316 9.76698 12.1316 9.767 12.1316C10.6527 11.2459 11.9746 11.0202 12.9823 11.5825L14.0989 12.2057C15.6205 13.0549 15.8002 15.1887 14.4627 16.5262C13.6591 17.3299 12.6745 17.9552 11.5862 17.9965C9.75408 18.0659 6.64267 17.6022 3.52159 14.4812C0.40051 11.3601 -0.0631647 8.24866 0.00629065 6.41654C0.0475491 5.32821 0.672885 4.34369 1.47654 3.54003C2.814 2.20257 4.94789 2.38227 5.79707 3.90388Z"
+                                                    fill="#735CFC" />
+                                                <path
+                                                    d="M8.89046 0.60474C8.95402 0.21214 9.32516 -0.0541848 9.71776 0.00937551C9.74206 0.0140273 9.82025 0.0286413 9.86122 0.0377654C9.94315 0.0560115 10.0574 0.0841039 10.1999 0.125608C10.4849 0.208607 10.883 0.345339 11.3608 0.564387C12.3174 1.00294 13.5904 1.77012 14.9113 3.09111C16.2323 4.4121 16.9995 5.6851 17.4381 6.64169C17.6571 7.11948 17.7938 7.51757 17.8768 7.80253C17.9184 7.94502 17.9464 8.0593 17.9647 8.14123C17.9738 8.1822 17.9805 8.2151 17.9851 8.2394L17.9907 8.26935C18.0542 8.66195 17.7903 9.04844 17.3977 9.112C17.0062 9.17537 16.6374 8.91034 16.5723 8.51958C16.5703 8.50909 16.5648 8.4809 16.5589 8.45431C16.547 8.40114 16.5265 8.31681 16.4941 8.20529C16.4291 7.98221 16.3162 7.65063 16.1289 7.24191C15.7546 6.42548 15.0815 5.29807 13.8929 4.10952C12.7044 2.92097 11.577 2.2479 10.7605 1.8736C10.3518 1.68622 10.0202 1.57337 9.79717 1.50839C9.68564 1.47591 9.54546 1.44373 9.49228 1.43189C9.10152 1.36677 8.82708 0.99622 8.89046 0.60474Z"
+                                                    fill="#01103D" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M9.10769 3.91679C9.21695 3.53438 9.61553 3.31295 9.99794 3.42221L9.80011 4.11462C9.99794 3.42221 9.99794 3.42221 9.99794 3.42221L9.99932 3.4226L10.0008 3.42303L10.004 3.42396L10.0114 3.42619L10.0304 3.4321C10.0449 3.43673 10.063 3.44276 10.0846 3.45041C10.1277 3.46571 10.1847 3.48748 10.2546 3.51744C10.3945 3.57738 10.5856 3.66996 10.8204 3.80891C11.2903 4.08705 11.9319 4.54906 12.6856 5.30276C13.4393 6.05646 13.9013 6.69803 14.1794 7.168C14.3184 7.40277 14.411 7.5939 14.4709 7.73378C14.5009 7.80369 14.5226 7.86068 14.5379 7.9038C14.5456 7.92536 14.5516 7.94344 14.5563 7.95792L14.5622 7.97692L14.5644 7.98436L14.5653 7.98756L14.5658 7.98903C14.5658 7.98903 14.5661 7.99041 13.8737 8.18825L14.5661 7.99041C14.6754 8.37282 14.454 8.7714 14.0716 8.88066C13.6924 8.98899 13.2973 8.77223 13.1842 8.39579L13.1806 8.38544C13.1755 8.37101 13.1649 8.3426 13.1471 8.30112C13.1116 8.21823 13.0472 8.08262 12.94 7.90154C12.7259 7.53981 12.3393 6.99324 11.6672 6.32117C10.9951 5.6491 10.4485 5.26244 10.0868 5.04835C9.90573 4.94118 9.77013 4.87676 9.68723 4.84123C9.64575 4.82345 9.61735 4.81286 9.60292 4.80774L9.59257 4.80419C9.21613 4.69101 8.99936 4.29595 9.10769 3.91679Z"
+                                                    fill="#01103D" />
+                                            </svg>
+                                        </span>
+                                            +91-8344930009
+                                        </a>
+                                        <a href="mailto:jsjb@info.com">
+                                            <span>
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 10.4397 0.338055 11.8005 0.939116 13.0072C1.09884 13.3279 1.15201 13.6945 1.05941 14.0406L0.523359 16.044C0.290659 16.9137 1.08631 17.7093 1.95601 17.4766L3.95945 16.9406C4.30554 16.848 4.67209 16.9012 4.99278 17.0609C6.19953 17.6619 7.56029 18 9 18Z"
+                                                        fill="#735CFC" />
+                                                    <path
+                                                        d="M5.2425 9.76432C4.83243 9.76432 4.5 10.0967 4.5 10.5068C4.5 10.9169 4.83243 11.2493 5.2425 11.2493H10.6875C11.0976 11.2493 11.43 10.9169 11.43 10.5068C11.43 10.0967 11.0976 9.76432 10.6875 9.76432H5.2425Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M5.2425 6.29932C4.83243 6.29932 4.5 6.63174 4.5 7.04182C4.5 7.45189 4.83243 7.78432 5.2425 7.78432H13.1625C13.5726 7.78432 13.905 7.45189 13.905 7.04182C13.905 6.63174 13.5726 6.29932 13.1625 6.29932H5.2425Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                            jsjb@info.com
+                                        </a>
+                                    </div>
+                                    <div class="tp-footer-5__bottom">
+                                        <a href="#">
+                                            <img src="assets/img/footer/footer-3-2.png" alt=""></a>
+                                        <a href="#">
+                                            <img src="assets/img/footer/footer-3-3.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-5 col-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                                <div class="tp-footer-5__widget footer-col-14">
+                                    <h4 class="tp-footer-5__widget-title">Our office</h4>
+                                    <div class="tp-footer-5__list">
+                                        <ul>
+                                            <li><a href="#">Newslatter & Blog</a></li>
+                                            <li><a href="#">Carrer & Contact</a></li>
+                                            <li><a href="#">Monthly Offer</a></li>
+                                            <li><a href="#">Affiliate Program</a></li>
+                                            <li><a href="#">Referrel Programms</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                                <div class="tp-footer-5__widget footer-col-15">
+                                    <h4 class="tp-footer-5__widget-title">Find It Fast</h4>
+                                    <div class="tp-footer-5__list">
+                                        <ul>
+                                            <li><a href="#">Flexographic Printing.</a></li>
+                                            <li><a href="#">Computer & Laptop</a></li>
+                                            <li><a href="#">Surface Printing.</a></li>
+                                            <li><a href="#">Brochure & Home gift</a></li>
+                                            <li><a href="#">Digital Printing.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-4 col-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                                <div class="tp-footer-5__widget footer-col-16">
+                                    <h4 class="tp-footer-5__widget-title">Useful links</h4>
+                                    <div class="tp-footer-5__list">
+                                        <ul>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Order Tracking</a></li>
+                                            <li><a href="#">All Products</a></li>
+                                            <li><a href="#">Our Stores</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-4 col-6 mb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
+                                <div class="tp-footer-5__widget footer-col-17">
+                                    <h4 class="tp-footer-5__widget-title">Find It Fast</h4>
+                                    <div class="tp-footer-5__list">
+                                        <ul>
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">My account</a></li>
+                                            <li><a href="#">Wish List</a></li>
+                                            <li><a href="#">Order tracking</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-area-end -->
+
+            <!-- copyright-area-start -->
+            <div class="tp-copyright-5__area">
+                <div class="container custom-container-4">
+                    <div class="tp-copyright-5__border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-7 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                                <div class="tp-copyright-5__text text-center text-md-start">
+                                    <span>Copyright <strong>&copy;
+                                        <script>document.write(new Date().getFullYear());</script>
+                                    </strong>
+                                        JSJB. All Rights Reserved.  
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 d-none d-xl-block wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                                <div class="tp-copyright-5__social-box">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-5 d-none d-sm-block wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                                <div class="tp-copyright-5__thumb text-center text-md-end">
+                                    <a href="#">
+                                        <img src="assets/img/footer/footer-2-1.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright-area-end -->
+
+
+        </footer>
+
+
+    </form>
+    <!-- JS here -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.querySelector(".tp-offcanvas-category-toggle");
+            const mobileMenu = document.querySelector(".tp-category-mobile-menu");
+
+            toggleBtn.addEventListener("click", function (e) {
+                e.preventDefault(); // stop form submit or reload
+                mobileMenu.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="ScriptContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
